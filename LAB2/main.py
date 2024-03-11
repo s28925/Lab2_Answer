@@ -16,7 +16,7 @@ Write a Python program that takes input from the user to create a list of intege
   a. Input: Ask the user to enter a series of space-separated integers.
 
   b. Convert Input: Convert the input string into a list of integers.
-  
+
   c. Sorting: Sort the list in ascending order.
 
   example:
@@ -31,10 +31,13 @@ Write a Python program that takes input from the user to create a list of intege
 input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input:
+numbers_list = input_numbers.split()
+for integer_string in numbers_list:
+    integer_string = int(integer_string)
 
 
 # Sorting:
-
+numbers_list.sort()
 
 # Print Output
 print("Sorted list:", numbers_list)
@@ -64,7 +67,7 @@ Extend the previous Python program to include tuples. Now, in addition to creati
   example:
   ```
   Enter a series of space-separated integers: 5 2 8 1 9
-  
+
   Sorted list: [1, 2, 5, 8, 9]
   Sorted tuple: (1, 2, 5, 8, 9)
   ```
@@ -89,11 +92,11 @@ Extend the previous Python program to demonstrate the manipulation of lists usin
   a. Input: Ask the user to enter a series of space-separated integers.
 
   b. Convert Input: Convert the input string into a list of integers and a tuple of integers.
-  
+
   c. Manipulate List: Use the append(), insert(), and remove() functions to modify the list.
-  
+
   d. Attempt to Modify Tuple: Try to modify the tuple using the same operations as the list.
-  
+
   e. Print Output: Print the modified list and attempt to print the modified tuple.
 
   example:

@@ -31,9 +31,8 @@ Write a Python program that takes input from the user to create a list of intege
 input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input:
-numbers_list = input_numbers.split()
-for integer_string in numbers_list:
-    integer_string = int(integer_string)
+numbers_strings = input_numbers.split()
+numbers_list = [int(iter_number) for iter_number in numbers_strings]
 
 
 # Sorting:
@@ -77,9 +76,8 @@ Extend the previous Python program to include tuples. Now, in addition to creati
 input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input:
-numbers_list = input_numbers.split()
-for integer_string in numbers_list:
-    integer_string = int(integer_string)
+numbers_strings = input_numbers.split()
+numbers_list = [int(iter_number) for iter_number in numbers_strings]
 
 numbers_tuple = tuple(numbers_list)
 
@@ -118,9 +116,8 @@ Extend the previous Python program to demonstrate the manipulation of lists usin
 input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input
-numbers_list = input_numbers.split()
-for integer_string in numbers_list:
-    integer_string = int(integer_string)
+numbers_strings = input_numbers.split()
+numbers_list = [int(iter_number) for iter_number in numbers_strings]
 
 numbers_tuple = tuple(numbers_list)
 

@@ -306,31 +306,63 @@ print("Updated Dictionary:", numbers_dict)
 input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input
+numbers_strings = input_numbers.split()
+numbers_list = [int(iter_number) for iter_number in numbers_strings]
+
+numbers_tuple = tuple(numbers_list)
 
 # Manipulate List
+# Append 10 to the list
+numbers_list.append(10)
+# Insert 20 at index 2
+numbers_list.insert(2, 20)
+# Remove the element 8
+print(numbers_list)
+numbers_list.remove(8)
 
 # Attempt to Modify Tuple (this will raise an error)
+try:
+    # Append 10 to the tuple
+    numbers_tuple.append(10)
+except AttributeError:
+    print("Tuples are immutable and cannot be modified.")
 
 # Set Operations
+numbers_set = set(numbers_list)
+# Union
+set_union = numbers_set.union({10, 11, 12})
+# Intersection
+set_intersection = numbers_set.intersection({8, 9})
+# Difference
+set_difference = numbers_set.difference({1, 2, 5, 8})
 
 # Dictionary Operations
+numbers_dict = {
+    5: 25,
+    2: 4,
+    8: 64,
+    1: 1,
+    9: 81
+}
 print("Original Dictionary:", numbers_dict)
 # Add a new key-value pair
+numbers_dict[11] = 121
 # Delete an existing key-value pair
+numbers_dict.pop(8)
 
 # Type Conversion
-# list_to_tuple =
-# list_to_set =
-# list_to_dict =
-# tuple_to_list =
-# tuple_to_set =
-# tuple_to_dict =
-# set_to_list =
-# set_to_tuple =
-# set_to_dict =
-# dict_to_list =
-# dict_to_tuple =
-# dict_to_set =
+list_to_tuple = tuple(numbers_list)
+list_to_set = set(numbers_list)
+list_to_dict = {numbers_list[i]: numbers_list[i + 1] for i in range(0, len(numbers_list) if len(numbers_list) % 2 == 0 else len(numbers_list) - 1, 2)}
+tuple_to_list = list(numbers_tuple)
+tuple_to_set = set(numbers_tuple)
+tuple_to_dict = {numbers_tuple[i]: numbers_tuple[i + 1] for i in range(0, len(numbers_tuple) if len(numbers_tuple) % 2 == 0 else len(numbers_tuple) - 1, 2)}
+set_to_list = list(numbers_set)
+set_to_tuple = tuple(numbers_set)
+set_to_dict = dict.fromkeys(numbers_set, 0)
+dict_to_list = list(numbers_dict)
+dict_to_tuple = tuple(numbers_dict)
+dict_to_set = set(numbers_dict)
 
 # Print Output
 print("List to Tuple:", list_to_tuple)

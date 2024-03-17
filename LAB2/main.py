@@ -737,3 +737,69 @@ else:
 """10.
 In the final main.py file, leave the results from task 8 and 9, commit and push
 """
+
+"""
+Contents of task8_results.txt file, obtained from Task 8:
+Student Number: s28925
+
+Original List: [5, 2, 20, 1, 9, 10]
+Original Tuple: (5, 2, 8, 1, 9)
+Original Set: {1, 2, 5, 9, 10, 20}
+Original Dictionary: {5: 25, 2: 4, 1: 1, 9: 81, 11: 121}
+
+Manipulated List: [5, 2, 20, 1, 9, 10]
+Manipulated Tuple: (5, 2, 8, 1, 9)
+Union of Set: {1, 2, 5, 9, 10, 11, 12, 20}
+Intersection of Set: {9}
+Difference of Set: {9, 10, 20}
+Updated Dictionary: {5: 25, 2: 4, 1: 1, 9: 81, 11: 121}
+
+List to Tuple: (5, 2, 20, 1, 9, 10)
+List to Set: {1, 2, 5, 9, 10, 20}
+List to Dictionary: {5: 2, 20: 1, 9: 10}
+Tuple to List: [5, 2, 8, 1, 9]
+Tuple to Set: {1, 2, 5, 8, 9}
+Tuple to Dictionary: {5: 2, 8: 1}
+Set to List: [1, 2, 5, 9, 10, 20]
+Set to Tuple: (1, 2, 5, 9, 10, 20)
+Set to Dictionary: {1: 0, 2: 0, 5: 0, 9: 0, 10: 0, 20: 0}
+Dictionary to List: [5, 2, 1, 9, 11]
+Dictionary to Tuple: (5, 2, 1, 9, 11)
+Dictionary to Set: {1, 2, 5, 9, 11}
+Total count of integers in file: 132
+Total sum of integers in file: 30186
+
+Contents of output.txt file, obtained from Task 9:
+Original List: [5, 2, 20, 1, 9, 10]
+Original Tuple: (5, 2, 8, 1, 9)
+Original Set: {1, 2, 5, 9, 10, 20}
+Original Dictionary: {5: 25, 2: 4, 1: 1, 9: 81, 11: 121}
+
+Manipulated List: [5, 2, 20, 1, 9, 10]
+Manipulated Tuple: (5, 2, 8, 1, 9)
+Union of Set: {1, 2, 5, 9, 10, 11, 12, 20}
+Intersection of Set: {9}
+Difference of Set: {9, 10, 20}
+Updated Dictionary: {5: 25, 2: 4, 1: 1, 9: 81, 11: 121}
+
+List to Tuple: (5, 2, 20, 1, 9, 10)
+List to Set: {1, 2, 5, 9, 10, 20}
+List to Dictionary: {5: 2, 20: 1, 9: 10}
+Tuple to List: [5, 2, 8, 1, 9]
+Tuple to Set: {1, 2, 5, 8, 9}
+Tuple to Dictionary: {5: 2, 8: 1}
+Set to List: [1, 2, 5, 9, 10, 20]
+Set to Tuple: (1, 2, 5, 9, 10, 20)
+Set to Dictionary: {1: 0, 2: 0, 5: 0, 9: 0, 10: 0, 20: 0}
+Dictionary to List: [5, 2, 1, 9, 11]
+Dictionary to Tuple: (5, 2, 1, 9, 11)
+Dictionary to Set: {1, 2, 5, 9, 11}
+Total count of integers in file: 131
+Total sum of integers in file: 1261
+
+Contents of prime_numbers.txt file, obtained from Task 9:
+Prime Numbers List: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113]
+Sum of Prime Numbers: 1593
+Largest Prime Number: 113
+Smallest Prime Number: 2
+"""
